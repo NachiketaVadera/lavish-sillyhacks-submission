@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+        body {
+            text-align: center;
+            {#background: linear-gradient(to right, #0f2027, #203a43, #2c5364);#}
+            background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+            -webkit-user-select: none
+        }
+        div {
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            padding: 10px;
+            height: 70%;
+            width: 80%;
+            background-color: #0f2027;
+            border-radius: 50px;
+            overflow: auto;
+            box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 1);
+        }
+        h1 {
+            font-size: 5em;
+            font-family: 'Comic Neue', cursive;
+            color: darksalmon;
+        }
+        p {
+            font-size: 2em;
+            font-family: monospace;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="result">
+        <h1>Yay, hey {{ username.name }}!</h1>
+        <p>In your quest, you managed to collect <span style="color: crimson">{{ score }} hearts</span>
+             in <span style="color: lightgreen">{{ time }} seconds!</span>
+             All of this while saving yourself from the Ghost. Awesome!</p>
+
+        <p>Based on your performance, we have calculated your final score to be {{ final_score }}/100</p>
+    </div>
+
+</body>
+</html>

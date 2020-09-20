@@ -1,0 +1,44 @@
+body {
+    background-color: #454545;
+    overflow: hidden;
+    user-select: none;
+    width: auto;
+}
+
+.score {
+    text-align: center;
+    vertical-align: middle;
+    line-height: inherit;
+    color: whitesmoke;
+}
+
+.goal {
+    background-color: limegreen;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 1);
+    border-radius: 1em;
+}
+
+#blob {
+    background-color: crimson;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 1em;
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 1);
+    border-radius: 1em;
+}
+
+.ghost {
+    background-image: url('./assets/g100.png');
+    background-size:contain;
+    height: 100px;
+    width: 100px;
+}
