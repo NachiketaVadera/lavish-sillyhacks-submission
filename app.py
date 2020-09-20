@@ -17,7 +17,7 @@ oauth = OAuth(app)
 auth0 = oauth.register(
     'auth0',
     client_id='yjlFwtU3cqcy3epA9weaAXwvWDVfc467',
-    client_secret='QeYlTA_xhD_XXCOJhnyCCk9UKXbE-v7srf_wssLxo_meoqz5D9XEmryVi_uc51V9',
+    client_secret='THIS_IS_A_SECRET',
     api_base_url='https://sillyhacks-2020.eu.auth0.com',
     access_token_url='https://sillyhacks-2020.eu.auth0.com/oauth/token',
     authorize_url='https://sillyhacks-2020.eu.auth0.com/authorize',
